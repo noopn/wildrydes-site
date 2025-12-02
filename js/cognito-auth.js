@@ -7,7 +7,8 @@ var WildRydes = window.WildRydes || {};
 
     var poolData = {
         UserPoolId: _config.cognito.userPoolId,
-        ClientId: _config.cognito.userPoolClientId
+        ClientId: _config.cognito.userPoolClientId,
+        ClientSecret:_config.cognito.userPoolClientSecret,
     };
 
     var userPool;
@@ -171,3 +172,4 @@ var WildRydes = window.WildRydes || {};
         );
     }
 }(jQuery));
+
